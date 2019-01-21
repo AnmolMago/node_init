@@ -1,0 +1,32 @@
+{
+  "name": "awesome",
+  "version": "0.0.1",
+  "description": "Awesome collections for developers",
+  "main": "src/index.js",
+  "repository": "https://github.com/AnmolMago/awesome",
+  "author": "Anmol Mago",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "flow": "flow",
+    "flow:check": "flow check ./src/",
+    "flow:build": "babel src/ -d ./build/ --all --pretty",
+    "flow:deps": "flow-typed install",
+    "lint": "eslint --fix ./src/*",
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "flow-bin": "^0.91.0",
+    "flow-typed": "^2.5.1",
+    "prettier": "1.16.0"
+  }
+}

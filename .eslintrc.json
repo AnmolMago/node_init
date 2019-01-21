@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["flowtype"],
+  "extends": [
+    "airbnb-base",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/babel",
+    "prettier/flowtype"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", "tab"],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "flowtype/no-types-missing-file-annotation": 0
+  }
+}
